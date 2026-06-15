@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Textbook"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_text"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/et_book_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Book Title"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/et_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Name"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price (e.g. R350)"
+            android:inputType="text"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/et_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Condition (New/Used)"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/et_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Short Description"
+            android:gravity="top"
+            android:lines="3"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btn_save_book"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Listing"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/primary_orange"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>
